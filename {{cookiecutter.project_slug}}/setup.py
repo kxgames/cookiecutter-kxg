@@ -6,6 +6,9 @@ try:
 except ImportError:
     from distutils.core import setup
 
+with open('source/metadata.py') as metadata_file:
+    exec(metadata_file.read())
+
 with open('README.rst') as readme_file:
     readme = readme_file.read()
 
@@ -19,11 +22,11 @@ test_requirements = [
 
 setup(
     name='{{ cookiecutter.project_slug }}',
-    version='{{ cookiecutter.version }}',
+    version=__version__,
+    author=__author__,
+    author_email=__email__,
     description='{{ cookiecutter.project_short_description }}',
     long_description=readme,
-    author='{{ cookiecutter.full_name }}',
-    author_email='{{ cookiecutter.email }}',
     url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}',
     packages=[
         '{{ cookiecutter.project_slug }}',
