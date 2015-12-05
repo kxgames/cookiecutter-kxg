@@ -1,7 +1,7 @@
 ****************
 cookiecutter-kxg
 ****************
-Cookiecutter template for a game based on the KXG game engine.  See 
+Cookiecutter template for games based on the KXG game engine.  See 
 https://github.com/audreyr/cookiecutter.  The template includes:
 
 * Free software: GPLv3 license
