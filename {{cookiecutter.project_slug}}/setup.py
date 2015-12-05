@@ -16,6 +16,7 @@ requirements = [
 test_requirements = [
 ]
 
+
 setup(
     name='{{ cookiecutter.project_slug }}',
     version='{{ cookiecutter.version }}',
@@ -28,7 +29,7 @@ setup(
         '{{ cookiecutter.project_slug }}',
     ],
     package_dir={
-        '{{ cookiecutter.project_slug }}': 'code'
+        '{{ cookiecutter.project_slug }}': 'source'
     },
     include_package_data=True,
     install_requires=requirements,
