@@ -1,7 +1,6 @@
 ****************
 cookiecutter-kxg
 ****************
-
 Cookiecutter template for a game based on the KXG game engine.  See 
 https://github.com/audreyr/cookiecutter.  The template includes:
 
@@ -14,9 +13,8 @@ https://github.com/audreyr/cookiecutter.  The template includes:
 
 Usage
 =====
-
 Run the following command to create a directory nicely setup to develop a new 
-game using the KXG game engine:
+game using the KXG game engine::
 
     cookiecutter https://github.com/kxgames/cookiecutter-kxg.git
 
@@ -33,7 +31,6 @@ Then:
 
 Not Exactly What You Want?
 ==========================
-
 Don't worry, you have options:
 
 Fork This / Create Your Own
