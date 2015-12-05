@@ -1,4 +1,5 @@
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
+# encoding: utf-8
 
 __author__ = '{{ cookiecutter.full_name }}'
 __email__ = '{{ cookiecutter.email }}'
