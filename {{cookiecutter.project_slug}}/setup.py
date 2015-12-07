@@ -6,7 +6,7 @@ try:
 except ImportError:
     from distutils.core import setup
 
-with open('source/metadata.py') as metadata_file:
+with open('{{ cookiecutter.project_slug }}/metadata.py') as metadata_file:
     exec(metadata_file.read())
 
 with open('README.rst') as readme_file:
@@ -31,14 +31,19 @@ setup(
     packages=[
         '{{ cookiecutter.project_slug }}',
     ],
-    package_dir={
-        '{{ cookiecutter.project_slug }}': 'source'
+    entry_points = {
+        'console_scripts': [
+            '{{ cookiecutter.project_slug }}={{ cookiecutter.project_slug }}:main',
+        ],
     },
     include_package_data=True,
     install_requires=requirements,
     license='GPLv3',
     zip_safe=False,
-    keywords='{{ cookiecutter.project_slug }}',
+    keywords=[
+        '{{ cookiecutter.project_slug }}',
+        'game',
+    ],
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: End Users/Desktop',
