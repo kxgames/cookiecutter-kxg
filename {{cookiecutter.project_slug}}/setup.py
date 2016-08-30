@@ -25,7 +25,6 @@ setup(
     version=__version__,
     author=__author__,
     author_email=__email__,
-    description='{{ cookiecutter.project_short_description }}',
     long_description=readme,
     url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}',
     packages=[
